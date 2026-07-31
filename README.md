@@ -793,4 +793,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 *FinSight is for educational purposes only. Not SEBI-registered investment advice.*
 
-</div>
+</div>#   F i n S i g h t - S t o c k - I n t e l l i g e n c e  
+ 
