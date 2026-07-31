@@ -1,0 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Environment
+.env
+
+# Database
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+backend_log.txt
+backend_pid.txt
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/

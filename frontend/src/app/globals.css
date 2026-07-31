@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+
+  /* War Room Colors */
+  --color-war-bg: #F5F2EC;
+  --color-war-border: #D4C9A8;
+  --color-war-buy: #1B4332;
+  --color-war-sell: #7F1D1D;
+  --color-war-text: #1a1a1a;
+  --color-war-muted: #666666;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-war-bg);
+  color: var(--color-war-text);
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for War Room theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-war-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-war-border);
+  border-radius: 0px; /* No rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b5aa8d;
+}
+
+/* Base resets for War Room aesthetics */
+* {
+  border-color: var(--color-war-border);
+  border-radius: 0 !important; /* Strict sharp corners everywhere */
+  box-shadow: none !important; /* No shadows */
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 280ms ease-out both;
+}
+
+@keyframes ohlcvSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ohlcv-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-war-border);
+  border-top-color: var(--color-war-text);
+  border-radius: 9999px !important;
+  animation: ohlcvSpin 800ms linear infinite;
+}
+
+.signal-cards-row {
+  align-items: stretch;
+}
+
+.signal-card {
+  height: auto;
+}
+
+.signal-card .triggers {
+  overflow: visible;
+  max-height: none;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.confidence-warn {
+  font-size: 10px;
+  color: #ffaa00;
+  letter-spacing: 0.05em;
+  border-left: 2px solid #ffaa00;
+  padding-left: 8px;
+  margin-top: 6px;
+  line-height: 1.4;
+}

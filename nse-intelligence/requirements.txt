@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+httpx
+beautifulsoup4
+lxml
+python-dotenv
+plotly
+yfinance
