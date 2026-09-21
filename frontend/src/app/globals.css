@@ -120,3 +120,54 @@ html {
   margin-top: 6px;
   line-height: 1.4;
 }
+
+/* ============================================================
+   MARKETMIND PROFESSIONAL THEME
+   ============================================================ */
+
+:root {
+  --marketmind-navy: #0b1324;
+  --marketmind-navy-2: #111c31;
+  --marketmind-teal: #0f766e;
+  --marketmind-teal-bright: #14b8a6;
+  --marketmind-gold: #b08d57;
+  --marketmind-cream: #f7f5ef;
+  --marketmind-paper: #ffffff;
+  --marketmind-border: #d7d3c8;
+  --marketmind-text: #172033;
+  --marketmind-muted: #667085;
+  --marketmind-danger: #b42318;
+}
+
+body {
+  background: var(--marketmind-cream);
+  color: var(--marketmind-text);
+}
+
+input,
+textarea,
+select {
+  border-color: var(--marketmind-border);
+  background: var(--marketmind-paper);
+  color: var(--marketmind-text);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--marketmind-teal);
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.12);
+}
+
+a {
+  color: var(--marketmind-teal);
+}
+
+a:hover {
+  color: var(--marketmind-teal-bright);
+}
+
+::selection {
+  background: rgba(20, 184, 166, 0.20);
+}

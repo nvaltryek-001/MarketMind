@@ -113,7 +113,13 @@ function computeSynthesisConfidence(
   } else {
     const counts: Record<SignalVerdict, number> = { BUY: 0, HOLD: 0, SELL: 0 };
     for (const agent of valid) {
-      counts[agent.verdict] += 1;
+      if (
+  agent.verdict === "BUY" ||
+  agent.verdict === "HOLD" ||
+  agent.verdict === "SELL"
+) {
+  counts[agent.verdict] += 1;
+}
     }
     selectedVerdict = (Object.entries(counts) as Array<[SignalVerdict, number]>).sort(
       (a, b) => b[1] - a[1]

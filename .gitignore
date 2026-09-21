@@ -1,26 +1,49 @@
 # Python
-venv/
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
 
-# Environment
+# Environment secrets
 .env
+.env.*
+!.env.example
 
-# Database
+# SQLite
 *.db
+*.sqlite
+*.sqlite3
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+
+# Python generated
+.pytest_cache/
+.mypy_cache/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
-backend_log.txt
-backend_pid.txt
+# IDE
+.vscode/
+.idea/
 
-# Frontend
-frontend/node_modules/
-frontend/.next/
-frontend/out/
-frontend/.turbo/
+# Logs
+*.log
+
+# Temporary
+tmp/
+temp/
+
+# Backups created during redesign
+frontend_backup_*/
+
+# Build/cache
+.cache/
