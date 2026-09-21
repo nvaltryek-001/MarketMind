@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -22,7 +22,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3">
           <div className="h-4 w-4 bg-[var(--color-war-text)]"></div>
           <span className="text-lg font-serif font-black tracking-tight text-[var(--color-war-text)]">
-            FINSIGHT<span className="font-light mx-2 text-[var(--color-war-muted)]">|</span>WAR ROOM
+            MARKETMIND<span className="font-light mx-2 text-[var(--color-war-muted)]">|</span>WAR ROOM
           </span>
         </Link>
 

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -19,7 +19,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FinSight — Autonomous Indian Stock Intelligence",
+  title: "MarketMind — Autonomous Indian Stock Intelligence",
   description:
     "Multi-agent AI system for real-time Indian stock analysis. Technical, fundamental, sentiment, and risk analysis powered by autonomous agents.",
 };
